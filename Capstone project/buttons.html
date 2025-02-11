@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleek Image Buttons with Hover Animation</title> <!--Name of the file-->
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="buttonstyles.css">
+</head>
+<body>
+    <div class="button-grid"> <!-- Container for the buttons -->
+
+        <div class="button">
+            <img src="Style\Landscape.jpg" alt="Image 1">
+            <div class="overlay">Course 1</div>
+        </div>                                                       
+        <div class="button">
+            <img src="Style/Landscape_2.jpg" alt="Image 2">
+            <div class="overlay">Course 2</div>
+        </div>
+        <div class="button">
+            <img src="Style/Landscape_3.jpg" alt="Image 3">
+            <div class="overlay">Course 3</div>
+        </div>
+        <div class="button">
+            <img src="Style/Landscape_4.jpg" alt="Image 4">
+            <div class="overlay">Course 4</div>
+        </div>
+        <div class="button">
+            <img src="Style/Landscape_5.jpg" alt="Image 5">
+            <div class="overlay">Course 5</div>
+        </div>
+        <div class="button">
+            <img src="Style/Landscape_6.jpg" alt="Image 6">
+            <div class="overlay">Course 6</div>
+        </div>
+        
+    </div>
+
+    <script>
+        // Optional: JavaScript for additional interactivity if needed
+        document.querySelectorAll('.button').forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                console.log(`Hovered over: ${button.querySelector('.overlay').innerText}`);
+            });
+        });
+    </script>
+</body>
+
+<!--New Code Added for dynamic buttons---------------------------------------------------------------------->
+
+
+</html>
