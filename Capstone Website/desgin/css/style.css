@@ -556,7 +556,15 @@ section{
 .courses .box-container .box .thumb{
    position: relative;
 }
+/* changes -- added code*/
+.box:hover {
+   transform: scale(1.07); /* Slight zoom effect on hover */
+}
 
+.box:hover img{
+   transform: scale(1.1);
+}
+/* changes -- added code */
 .courses .box-container .box .thumb span{
    position: absolute;
    top:1rem; left: 1rem;
@@ -568,10 +576,10 @@ section{
 }
 
 .courses .box-container .box .thumb img{
-   width: 100%;
-   height: 20rem;
-   object-fit: cover;
-   border-radius: .5rem;
+   width: 100%;                                          /* Modified: 100 > NO CHANGE */
+   height: 23rem;                                        /* Modified: 20rem to 40*/
+   object-fit: cover;                                     /* Modified: cover to NO CHANGE*/
+   border-radius: .5rem;              
 }
 
 .courses .box-container .box .title{
